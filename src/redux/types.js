@@ -1,0 +1,3 @@
+export const SET_CURRENCIES = 'SET_CURRENCIES'
+export const SET_PREV_CURRENCIES = 'SET_PREV_CURRENCY'
+export const ON_ERROR = 'ON_ERROR'
