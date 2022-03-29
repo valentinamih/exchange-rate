@@ -1,9 +1,9 @@
-import {ON_ERROR, SET_CURRENCIES, SET_PREV_CURRENCIES} from "./types";
+import {ON_ERROR, SET_CURRENCIES, SET_DIFFERENCE, SET_PREV_CURRENCIES} from "./types";
+import {stateMapper} from "../utilits/stateMapper";
 
 let initialState = {
-    currencies: [],
-    prevCurrencies: [],
-    error: null
+    currencies: {},
+    error: null,
 }
 
 export const appReducer = (state = initialState, action) => {
@@ -14,7 +14,7 @@ export const appReducer = (state = initialState, action) => {
             }
         case SET_PREV_CURRENCIES:
             return {
-                ...state, prevCurrencies: action.prevCurrencies
+                ...state, currencies: {...stateMapper(state.currencies, action.prevCurrencies)}
             }
         case ON_ERROR:
             return {

@@ -1,0 +1,49 @@
+.itemContainer {
+    display: grid;
+    grid-template-areas: 'c v d' 'p p p';
+    min-height: 50px;
+    align-items: center;
+    border-bottom: 1px solid #282c34;
+}
+.itemContainer:hover {
+    color: rgba(179, 185, 215, 1);
+}
+.charCode {
+    display: grid;
+    grid-area: c;
+    justify-content: start;
+}
+.value {
+    display: grid;
+    grid-area: v;
+}
+.diff {
+    display: grid;
+    grid-area: d;
+    grid-template-columns: 1fr 60px;
+    justify-items: end;
+    justify-content: end
+}
+.diffImage {
+    width: 30px;
+}
+.tooltip {
+    position: relative;
+}
+.tooltip .tooltipText {
+    opacity: 0;
+    transition: opacity 1s;
+    width: 150px;
+    left: 360px;
+    top: 55px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltipText {
+    opacity: 1;
+}

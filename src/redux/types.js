@@ -1,3 +1,6 @@
 export const SET_CURRENCIES = 'SET_CURRENCIES'
 export const SET_PREV_CURRENCIES = 'SET_PREV_CURRENCY'
 export const ON_ERROR = 'ON_ERROR'
+export const SET_DIFFERENCE = 'SET_DIFFERENCE'
+export const RATE_UP = 'RATE_UP'
+export const RATE_DOWN = 'RATE_DOWN'

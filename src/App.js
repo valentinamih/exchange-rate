@@ -1,15 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 import {useDispatch} from "react-redux";
-import {requestPrevCurrency, requestСurrency} from "./redux/actions";
+import {initializeApp} from "./redux/actions";
+import {useEffect} from "react";
+import CurrencyList from "./components/CurrencyList/CurrencyList";
+
 
 function App() {
   let dispatch = useDispatch()
-  dispatch(requestСurrency())
-  dispatch(requestPrevCurrency())
+  useEffect(() => {
+    dispatch(initializeApp())
+  }, [dispatch])
   return (
-    <div className="App">
-
+    <div className='App'>
+      <CurrencyList />
     </div>
   );
 }

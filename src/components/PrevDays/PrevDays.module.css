@@ -1,0 +1,7 @@
+.prevDaysList {
+    display: grid;
+    grid-area: p;
+}
+.prevDays {
+    padding: 7px 5px;
+}
