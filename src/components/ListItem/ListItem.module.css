@@ -20,7 +20,7 @@
 .diff {
     display: grid;
     grid-area: d;
-    grid-template-columns: 1fr 60px;
+    grid-template-columns: 1fr 70px;
     justify-items: end;
     justify-content: end
 }

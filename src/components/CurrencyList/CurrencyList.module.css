@@ -1,20 +1,6 @@
-header {
-    display: flex;
-    align-items: flex-end
-}
-.logo {
-    padding: 10px 5px 0px 10px;
-    width: 70px;
-    height: 70px;
-}
-.listContainer {
-    margin: 0 auto;
-    width: 60%;
-}
 h1 {
     margin: 0;
 }
-
 li {
     list-style-type: square;
 }

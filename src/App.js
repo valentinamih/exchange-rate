@@ -3,6 +3,7 @@ import {useDispatch} from "react-redux";
 import {initializeApp} from "./redux/actions";
 import {useEffect} from "react";
 import CurrencyList from "./components/CurrencyList/CurrencyList";
+import Header from './components/Header/Header'
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
   }, [dispatch])
   return (
     <div className='App'>
+      <Header />
       <CurrencyList />
     </div>
   );

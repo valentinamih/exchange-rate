@@ -28,9 +28,7 @@ const ListItem = (props) =>  {
                     <span className={style.tooltipText}>{props.name}</span>
                 </div>
             </div>
-
-
-            {fullMode ? <PrevDays prevValue={props.prevValue} values={props.prevValues} /> : null}
+            {fullMode ? <PrevDays prevValue={props.prevValue} values={props.prevValues} nominal={props.nominal} /> : null}
         </div>
     )
 }

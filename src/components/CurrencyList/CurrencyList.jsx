@@ -1,7 +1,6 @@
 import {useSelector} from "react-redux";
 import ListItem from "../ListItem/ListItem";
 import style from './CurrencyList.module.css'
-import currency from '../../assets/currency.png'
 
 const CurrencyList = (props) => {
     const currenciesData = useSelector((state) => {
@@ -10,10 +9,6 @@ const CurrencyList = (props) => {
     })
     return (
         <div className={style.listContainer}>
-            <header>
-                <img src={currency} alt={'currency'} className={style.logo}/>
-                <h1>Курс валюты</h1>
-            </header>
             <ul>
                 {Object.keys(currenciesData).map((function (key) {
                     return <li key={currenciesData[key].NumCode}>
